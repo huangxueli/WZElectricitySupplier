@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/modeltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_marginLeft="18dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

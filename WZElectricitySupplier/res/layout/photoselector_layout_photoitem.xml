@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/photo_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name" 
+            android:scaleType="centerCrop" />
+
+        <CheckBox
+            android:id="@+id/photo_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/photoselector_btn_checkbox_selector"
+            android:button="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+	
+    <TextView 
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/photoselector_photoitem_bottom_bg"
+        android:text="删除"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@drawable/textview_selector_photoitem"/>
+</FrameLayout>

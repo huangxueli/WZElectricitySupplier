@@ -1,0 +1,45 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="1dp" >
+
+    <RelativeLayout
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="6" >
+
+        <Button
+            android:id="@+id/casename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:textColor="@drawable/textview_selector_color_check"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/checkpeople"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/checkdate"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/detail"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" 
+        android:visibility="gone"/>
+
+</TableRow>

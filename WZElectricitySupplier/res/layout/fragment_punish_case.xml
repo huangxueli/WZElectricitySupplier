@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:scrollbars="none" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="1000dp"
+                    android:layout_height="1dp"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="处罚案件表单"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流水号："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/lshao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="201411057"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="645dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/table_row_blue"
+                android:padding="2dp" >
+
+                <TableRow>
+
+                    <!-- 基本信息 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="基本信息" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 工地名称、开工时间 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="工地名称" />
+					<TextView
+                        android:id="@+id/placename"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="开工时间" />
+
+                    <TextView
+                        android:id="@+id/starttime"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"/>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 工地地址、供地面积 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="工地地址" />
+
+                    <TextView
+                        android:id="@+id/place_address"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="工地面积" />
+
+                    <TextView
+                        android:id="@+id/placearea"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:inputType="text" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 施工单位 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="施工单位" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 施工单位名称 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="施工单位名称" />
+
+                    <TextView
+                        android:id="@+id/company_name"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:inputType="text" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 联系人、联系电话 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="联系人" />
+
+                    <TextView
+                        android:id="@+id/linkman"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:inputType="text" />
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="联系电话" />
+
+                    <TextView
+                        android:id="@+id/linkmantel"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:inputType="phone" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 法人、法人电话 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="法人" />
+
+                    <TextView
+                        android:id="@+id/legalman"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:inputType="text" />
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="法人电话" />
+
+                    <TextView
+                        android:id="@+id/legalmantel"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:inputType="phone" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 地址 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="地址" />
+
+                    <TextView
+                        android:id="@+id/company_address"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:inputType="text" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 备注 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="备注" />
+
+                    <TextView
+                        android:id="@+id/company_remark"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:inputType="text" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 处罚依据 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="处罚标准" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 处罚类型 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="处罚类型" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="4"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/punnish_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 大类名称、序号 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="大类名称" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/big_classes1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="序号" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/xh1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </TableRow>
+
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 违法行为 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="违法行为" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="4"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/weifa_action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 记分依据 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="记分依据" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 大类名称、序号 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="大类名称" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/big_classes2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="序号" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/white" >
+
+                        <Spinner
+                            android:id="@+id/xh2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 不良行为 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="不良行为" />
+
+                    <TextView
+                        android:id="@+id/badness_act"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/white" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 法律依据 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="法律依据" />
+
+                    <TextView
+                        android:id="@+id/egal_basis"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/white" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 记分标准 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="记分标准 " />
+
+                    <TextView
+                        android:id="@+id/judging_standards"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/white" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 记分备注 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="记分备注 " />
+
+                    <TextView
+                        android:id="@+id/judging_remark"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/white" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 备注 -->
+
+                    <TextView
+                        style="@style/table_theme_textview_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="备注" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="1dp" >
+
+                    <!-- 记分备注 -->
+
+                    <EditText
+                        android:id="@+id/remark"
+                        style="@style/table_theme_textview_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="top|left"
+                        android:inputType="text"
+                        android:singleLine="false" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</ScrollView>

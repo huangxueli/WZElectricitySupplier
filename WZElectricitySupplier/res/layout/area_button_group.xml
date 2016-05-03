@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="35dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ZoomControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ZoomInBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector_zoom_in"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/ZoomOutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector_zoom_out"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/LocationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector_location"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ScaleRule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/scale_rule"
+        android:textColor="@color/gray_black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

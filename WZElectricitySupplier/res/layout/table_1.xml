@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_row_blue"
+        android:padding="2dp" >
+
+        <TableRow>
+
+            <TextView
+                style="@style/table_theme_textview_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="基本信息" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目名称" />
+
+            <TextView
+                android:id="@+id/xmmc"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目地址" />
+
+            <TextView
+                android:id="@+id/xmdz"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开工时间" />
+
+            <TextView
+                android:id="@+id/starttime"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="建设面积" />
+
+            <TextView
+                android:id="@+id/jzmj"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目费用" />
+
+            <TextView
+                android:id="@+id/xmfy"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/table_theme_textview_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="施工单位信息" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单位名称" />
+
+            <TextView
+                android:id="@+id/dwmc"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="组织结构代码" />
+
+            <TextView
+                android:id="@+id/zzjgdm"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单位地址" />
+
+            <TextView
+                android:id="@+id/dwdz"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="法人" />
+
+            <TextView
+                android:id="@+id/fr"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="法人电话" />
+
+            <TextView
+                android:id="@+id/frdh"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="联系人" />
+
+            <TextView
+                android:id="@+id/lxr"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="联系人电话" />
+
+            <TextView
+                android:id="@+id/lxrdh"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="备注" />
+
+            <TextView
+                android:id="@+id/bz"
+                style="@style/table_theme_textview_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- Application theme. -->
+    <style name="MyActivityTheme" parent="AppBaseTheme">
+        <item name="android:listDivider">@drawable/draw_recyclerview_divider</item>  <!-- 设置跟RecyclerView分隔线相关 -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- dialog full theme. -->
+    <style name="DialogFullTheme" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item> 
+        <item name="android:backgroundDimEnabled">false</item> 
+    </style>
+
+    <style name="HXL.Dialog.FullScreen" parent="android:Theme.Dialog">
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- false，背景亮 -->
+        <item name="android:backgroundDimEnabled">false</item> 
+    </style>
+
+    <style name="table_theme_textview_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/table_row_blue</item>
+    </style>
+
+    <style name="table_theme_textview_head">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/table_row_gray</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="table_theme_textview_edittext">
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="table_theme_textview_edittext2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+    <!-- PhotoSelector -->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/photoselector_btn_checkbox_selector</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

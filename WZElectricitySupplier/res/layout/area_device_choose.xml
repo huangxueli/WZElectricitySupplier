@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/AreaDeviceHideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_selector_arrow_down"
+        android:contentDescription="@string/app_name"
+        android:translationY="1px" 
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AreaDeviceHideBtn"
+        android:background="@drawable/bg_device_icon_choose_area"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ChooseBDSBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_checked_icon_bds"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseGTBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_gt"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseSwitchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_switch"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        
+        <RadioButton
+            android:id="@+id/ChooseGLBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_gl"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseLKBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_lk"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseGBBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_gb"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChoosePDBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_pd"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseKGBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_kg"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ChooseHWBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_checked_icon_hw"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/ChooseXBBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_checked_icon_xb"
+            android:button="@color/transparent"
+            android:contentDescription="@string/app_name" />
+    </RadioGroup>
+
+</RelativeLayout>

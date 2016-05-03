@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+	
+    <View
+	    android:layout_width="1000dp"
+	    android:layout_height="1dp"
+	    android:background="@color/transparent" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bj"
+        android:orientation="vertical"
+        android:padding="15dp" 
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/case_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="业务类型 ：" 
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/punish_case"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="处罚程序案件" 
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textColor="@drawable/textview_selector_color_check"
+            android:background="@color/transparent"
+            android:layout_toRightOf="@id/case_type"
+            android:layout_alignBaseline="@id/case_type"/>
+        
+        <TextView
+            android:id="@+id/case_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:text="业务名称 ：" 
+            android:textSize="18sp"
+            android:textColor="@color/gray_light"
+            android:layout_below="@id/case_type"/>
+        <TextView
+            android:id="@+id/punish_case_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:text="徐新料 2014年11月18日 处罚程序案件" 
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textColor="@color/gray_light"
+            android:layout_toRightOf="@id/case_name"
+            android:layout_below="@id/case_type"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bj"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="15dp" 
+        android:paddingRight="50dp" >
+
+        <TextView
+            android:id="@+id/case_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="业务类型 ：" 
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/normal_case"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="简易程序案件" 
+            android:textSize="18sp"
+            android:clickable="true"
+            android:background="@color/transparent"
+            android:textColor="@drawable/textview_selector_color_check"
+            android:layout_toRightOf="@id/case_type2" 
+            android:layout_alignBaseline="@id/case_type2"/>
+        
+        <TextView
+            android:id="@+id/case_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:text="业务名称 ：" 
+            android:textSize="18sp"
+            android:textColor="@color/gray_light"
+            android:layout_below="@id/case_type2"/>
+        <TextView
+            android:id="@+id/normal_case_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:text="徐新料 2014年11月18日 简易程序案件" 
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textColor="@color/gray_light"
+            android:layout_toRightOf="@id/case_name2"
+            android:layout_below="@id/case_type2"/>
+    </RelativeLayout>
+
+</LinearLayout>

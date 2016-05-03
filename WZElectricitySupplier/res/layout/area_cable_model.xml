@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/ModelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RadioButton
+        android:id="@+id/model1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*35"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/model2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*50"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/model3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*70"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/model4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*95"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/model5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*120"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/model6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_checked_spinner_item_bg"
+        android:button="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="4dp"
+        android:text="铝芯	YJLV22-8.7/15-3*150"
+        android:textColor="@color/popwindow_add_graphic_blue"
+        android:textSize="15sp" />
+
+</RadioGroup>

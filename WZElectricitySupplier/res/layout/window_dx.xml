@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fullscreen_gray"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/windowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_window_addgraphic_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="11dp" >
+
+        <FrameLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="线缆信息"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_selector_ok"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_selector_edit2"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector_close"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_window_addgraphic_check_white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="14dp"
+               	android:paddingRight="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" 
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/nametext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="线路名称："
+                        android:textColor="@color/popwindow_add_graphic_blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:background="@color/white"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/devideline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/popwindow_add_graphic_blue"
+                    android:contentDescription="@string/app_name" />
+
+                <ScrollView
+                    android:id="@+id/ScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:fillViewport="true"
+                    android:scrollbars="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/heighttext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="长度："
+                                android:textColor="#478ada"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/height"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:enabled="false"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/TypeText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/popwindow_add_graphic_blue"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:text="导线类型"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/Type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                            </FrameLayout>
+
+                            <RadioGroup
+                                android:id="@+id/option1group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/popwindow_add_graphic_gray"
+                                android:visibility="gone" >
+
+                                <RadioButton
+                                    android:id="@+id/type1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_checked_spinner_item_bg"
+                                    android:button="@color/transparent"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="18dp"
+                                    android:paddingTop="4dp"
+                                    android:text="绝缘导线"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/type2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_checked_spinner_item_bg"
+                                    android:button="@color/transparent"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="18dp"
+                                    android:paddingTop="4dp"
+                                    android:text="电缆"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/type3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_checked_spinner_item_bg"
+                                    android:button="@color/transparent"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="18dp"
+                                    android:paddingTop="4dp"
+                                    android:text="裸导线"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/ModelText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/popwindow_add_graphic_blue"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:text="导线型号"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/Model"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                            </FrameLayout>
+
+                            <RadioGroup
+                                android:id="@+id/option2group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/popwindow_add_graphic_gray"
+                                android:visibility="gone" >
+
+                                <com.example.wzelectricitysupplier.customwidget.InnerListView
+                                    android:id="@+id/DLModelListView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:background="@color/popwindow_add_graphic_gray"
+                                    android:choiceMode="singleChoice"
+                                    android:divider="@color/transparent"
+                                    android:scrollbars="none" />
+
+                                <com.example.wzelectricitysupplier.customwidget.InnerListView
+                                    android:id="@+id/LDModelListView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:background="@color/popwindow_add_graphic_gray"
+                                    android:choiceMode="singleChoice"
+                                    android:divider="@color/transparent"
+                                    android:scrollbars="none"
+                                    android:visibility="gone" />
+
+                                <com.example.wzelectricitysupplier.customwidget.InnerListView
+                                    android:id="@+id/JYModelListView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:background="@color/popwindow_add_graphic_gray"
+                                    android:choiceMode="singleChoice"
+                                    android:divider="@color/transparent"
+                                    android:scrollbars="none"
+                                    android:visibility="gone" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/cameratext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/popwindow_add_graphic_blue"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:text="照片"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <ImageButton
+                                    android:id="@+id/camera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/button_selector_camera"
+                                    android:contentDescription="@string/app_name"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Container"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/recyclerview_height"
+                                android:background="@color/popwindow_add_graphic_gray"
+                                android:orientation="vertical" >
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/photos"
+                                    android:layout_width="@dimen/recyclerview_width"
+                                    android:layout_height="match_parent"
+                                    android:scrollbars="horizontal" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/remarktext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/popwindow_add_graphic_blue"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="5dp"
+                                android:text="备注"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/remark"
+                                android:layout_width="524dp"
+                                android:layout_height="124dp"
+                                android:background="@color/popwindow_add_graphic_gray"
+                                android:enabled="false"
+                                android:gravity="left|top"
+                                android:imeOptions="actionDone"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/check_buttongroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/defectmanageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_defectmanage"
+                android:contentDescription="@string/app_name" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_buttongroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/moveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_move"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_delete"
+                android:contentDescription="@string/app_name" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="1dp" >
+
+    <RelativeLayout
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+
+        <Button
+            android:id="@+id/casename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:textColor="@drawable/textview_selector_color_check"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bigtypename"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/weifaaction"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:maxEms="15"
+        android:maxLines="5" />
+
+    <TextView
+        android:id="@+id/chufayiju"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:maxEms="30"
+        android:maxLines="5" />
+
+    <TextView
+        android:id="@+id/weifaqingxing"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:maxEms="10"
+        android:maxLines="5" />
+
+    <TextView
+        android:id="@+id/chulifudu"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:maxEms="10"
+        android:maxLines="5" />
+
+    <TextView
+        android:id="@+id/shangbaokeshi"
+        style="@style/table_theme_textview_edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+</TableRow>

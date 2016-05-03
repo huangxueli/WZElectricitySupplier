@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <TableLayout
+        android:id="@+id/table2_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_row_blue"
+        android:padding="2dp" >
+
+        <TableRow>
+
+            <TextView
+                style="@style/table_theme_textview_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="计分情况" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table2_title"
+            android:layout_marginTop="1dp" 
+            android:visibility="gone">
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="业务名称" />
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="不良行为" />
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="法律依据" />
+
+            <TextView
+                style="@style/table_theme_textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="计分标准" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp" 
+            android:id="@+id/table2_complex_name">
+
+            <TextView
+                style="@style/table_theme_textview_edittext2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="0dp"
+                android:text="该项目没有历史记分记录" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

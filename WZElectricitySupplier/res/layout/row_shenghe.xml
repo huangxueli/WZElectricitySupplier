@@ -1,0 +1,45 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="流程步骤" />
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="步骤名称" />
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="业务办理人" />
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="所在部门" />
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="办理时间" />
+
+    <TextView
+        style="@style/table_theme_textview_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="办理意见" />
+
+</TableRow>

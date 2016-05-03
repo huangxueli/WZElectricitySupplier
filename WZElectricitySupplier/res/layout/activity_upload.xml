@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:padding="1dp" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/uploadfragment_table_gray"
+                    android:gravity="center_vertical|left"
+                    android:padding="8dp"
+                    android:paddingLeft="15dp"
+                    android:text="附件上传"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="附件选择"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/nameshow_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/white"
+                        android:padding="5dp" >
+
+                        <Button
+                            android:id="@+id/liulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_alignBottom="@+id/filename"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@+id/filename"
+                            android:background="@drawable/button_selector_button2"
+                            android:contentDescription="@string/app_name"
+                            android:text="浏览..."
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/takephoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_alignBottom="@+id/filename"
+                            android:layout_alignTop="@+id/filename"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@id/liulan"
+                            android:background="@drawable/button_selector_button2"
+                            android:contentDescription="@string/app_name"
+                            android:text="拍照"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/filename"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toLeftOf="@+id/upload"
+                            android:layout_toRightOf="@id/takephoto"
+                            android:hint="上传文件名"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_alignBottom="@id/filename"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/filename"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/button_selector_button2"
+                            android:contentDescription="@string/app_name"
+                            android:text="文件上传"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="上传状态"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/result_prompt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="3.5"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|left"
+                    android:hint="上传结果"
+                    android:padding="8dp"
+                    android:singleLine="false"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+            </TableRow>
+            
+            <TableRow android:layout_marginTop="1dp" >
+
+                <TextView
+                    android:id="@+id/remark_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="处理意见"
+                    android:textSize="15sp" 
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="3.5"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/remark_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:padding="8dp"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:textSize="13sp" 
+                        android:maxLength="198">
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="14dp"
+                        android:background="@drawable/button_selector_button2"
+                        android:contentDescription="@string/app_name"
+                        android:text="上传"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/yulan_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@color/black"
+            android:padding="1dp"
+            android:stretchColumns="0" >
+
+            <include layout="@layout/row_preview" />
+        </TableLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:id="@+id/table_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/table_row_blue"
+                    android:padding="1dp" >
+
+                    <include layout="@layout/row_shqk" />
+                    
+                    <include layout="@layout/row_shenghe" />
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

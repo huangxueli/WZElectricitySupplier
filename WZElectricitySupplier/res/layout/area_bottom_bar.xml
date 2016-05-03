@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <include
+                android:id="@+id/AreaCableChoose"
+                layout="@layout/area_cable_choose"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/AreaDeviceChoose"
+                layout="@layout/area_device_choose"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/tuli"
+            layout="@layout/area_tuli" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/MyRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/addEquipmentBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bottombar_add_device"
+            android:button="@color/transparent" />
+
+        <CheckBox
+            android:id="@+id/addLineBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bottombar_add_line"
+            android:button="@color/transparent" />
+
+        <CheckBox
+            android:id="@+id/deleteLineBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bottombar_delete_line"
+            android:button="@color/transparent" />
+
+        <CheckBox
+            android:id="@+id/measureDistanceBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bottombar_messure"
+            android:button="@color/transparent" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/MessageArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottombar_prompt"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:padding="2dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/BottomBarPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="提示框"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

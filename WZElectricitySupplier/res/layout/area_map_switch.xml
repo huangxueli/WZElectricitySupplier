@@ -1,0 +1,39 @@
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapArea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/turnVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_selector_map_vector"
+        android:button="@color/transparent"
+        android:checked="true"
+        android:contentDescription="@string/app_name" />
+
+    <RadioButton
+        android:id="@+id/turnTwofive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_selector_map_25d"
+        android:button="@color/transparent"
+        android:contentDescription="@string/app_name" 
+        android:visibility="gone"/>
+
+    <RadioButton
+        android:id="@+id/turnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_selector_map_image"
+        android:button="@color/transparent"
+        android:contentDescription="@string/app_name" />
+
+</RadioGroup>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/table4_tablelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_row_blue"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/table_theme_textview_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="工程建设类" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/title1"
+                android:layout_marginTop="1dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="业务名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="大类名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="序号" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingLeft="20dp"
+                    android:text="违法行为" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="26dp"
+                    android:text="处罚依据" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="违法情形" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="处罚幅度" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="上报科室" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="1dp" 
+                android:id="@+id/complex_name1">
+
+                <TextView
+                    style="@style/table_theme_textview_edittext2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="0dp"
+                    android:text="该项目没有工程建设类历史处罚记录" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table4_tablelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/table_row_blue"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/table_theme_textview_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="城乡规划与村镇建设类" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/title2"
+                android:layout_marginTop="1dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="业务名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="大类名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="序号" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingLeft="20dp"
+                    android:text="违法行为" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="26dp"
+                    android:text="处罚依据" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="违法情形" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="处罚幅度" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="上报科室" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="1dp" 
+                android:id="@+id/complex_name2">
+
+                <TextView
+                    style="@style/table_theme_textview_edittext2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="0dp"
+                    android:text="该项目没有城乡规划与城镇建设类历史处罚记录" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table4_tablelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/table_row_blue"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/table_theme_textview_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="住宅与房地产类" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/title3"
+                android:layout_marginTop="1dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="业务名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="大类名称" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="序号" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingLeft="20dp"
+                    android:text="违法行为" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="26dp"
+                    android:text="处罚依据" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="违法情形" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="处罚幅度" />
+
+                <TextView
+                    style="@style/table_theme_textview_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="0dp"
+                    android:text="上报科室" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="1dp" 
+                android:id="@+id/complex_name3">
+
+                <TextView
+                    style="@style/table_theme_textview_edittext2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="0dp"
+                    android:text="该项目没有住宅与房地产类历史处罚记录" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
